@@ -3,7 +3,9 @@ import styled from "@emotion/styled/";
 export const ContactForm = styled.form`
   width: 350px;
   padding: 10px;
+  margin-bottom: 10px;
   border: solid 1px black;
+
 
 `
 

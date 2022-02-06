@@ -72,7 +72,9 @@ class App extends Component {
 
                 <h2>Contacts</h2>
 
-                <ContactList contacts={contacts} FilteredContact={this.getFilteredContact()} deleteContact={this.deleteContact} />
+                <ContactList contacts={contacts}
+                    filteredContact={this.getFilteredContact()}
+                    deleteContact={this.deleteContact} />
 
             </div>
         );
