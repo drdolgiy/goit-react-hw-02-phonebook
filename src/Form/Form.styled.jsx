@@ -21,3 +21,14 @@ export const InputName = styled.input`
   margin-top: 10px;
   /* margin-bottom: 10px; */
 `
+
+export const TelLabel = styled.label`
+
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  
+
+`

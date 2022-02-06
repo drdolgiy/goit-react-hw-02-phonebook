@@ -7,15 +7,18 @@ import { nanoid } from "nanoid";
 class App extends Component {
     state = {
         contacts: [],
-        name: ''
+        filter: '',
+        name: '',
+        number: ''
     };
 
     formSubmitHandler = data => {
-        console.log(data.contacts)
+        // console.log(data.number)
 
         const contact = {
             id: nanoid(),
             name: data.name,
+            number: data.number
         };
 
         this.setState(prevState => ({
@@ -35,9 +38,9 @@ class App extends Component {
                 <h2>Contacts</h2>
 
                 <ul>
-                    {this.state.contacts.map(({name, id}) => {
+                    {this.state.contacts.map(({name,number, id}) => {
                         return (
-                            <li key={id}>{name}</li>
+                            <li key={id}>{name}: {number}</li>
                         )
                     })}
                 </ul> 
