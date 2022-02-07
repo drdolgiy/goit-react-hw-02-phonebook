@@ -58,15 +58,18 @@ class App extends Component {
     render() {
 
         const { filter, contacts } = this.state;
+        const addContact = this.addContact;
+        const changeFilter = this.changeFilter;
+        // const { getFilteredContact } = this.getFilteredContact();
 
         return (
             <div className='App'>
 
                 <h1>Phonebook</h1>
 
-                <Form onSubmit={this.addContact}></Form>
+                <Form onSubmit={addContact}></Form>
 
-                <Filter value={filter} onChange={this.changeFilter} />
+                <Filter value={filter} onChange={changeFilter} />
 
                 <h2>Contacts</h2>
 
